@@ -5,36 +5,60 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>basic</title>
 	<style type="text/css">
-		*{
+	*{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'poppins',sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
-
-.hero{
+.headings{
+	  color: white;
+	  position: absolute;
+	  top: 0%;
+	  left:0%;
+	  padding-left: 5%;
+}
+.bg-img{
 	min-height: 100vh;
 	width: 100%;
 	background-color: #000;
-	background-image: url(https://i.kym-cdn.com/photos/images/newsfeed/000/720/536/e0c.gif);
+  background-image: url("https://i.pinimg.com/736x/d7/93/92/d79392089b6ac935027e968e00af0f80.jpg");
 
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 70%;
-	color: #fff;
+  filter: blur(4px);
+
+  /* Full height */
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 	padding: 0 8%;
+	color: #fff;
 }
-
+.bg-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+}
 nav{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 0;
+	color: white;
 	}
 nav ul li {
 	display: inline-block;
 	list-style: none;
-	margin: 10px 5px;
+	margin:5px 0px;
 	}
 nav ul li a{
 	font-size: 120%;
@@ -42,20 +66,23 @@ nav ul li a{
 nav a{
 	display: inline-block;
 	list-style: none;
-	margin: 10px 40px;
+	margin: 60px 0px;
 	color: #fff;
 	text-decoration: none;
 	font-size: 150%;
 }
 nav ul li a{
+	margin-left: 100px;
 	color: #fff;
 	text-decoration: none;
+	right: 10px;
+	top: 5px;
 }
 .about{
 	text-align: center;
 	font-size: 250%;
 }
-img{
+.pic{
 	border-radius: 50%;
 	height: 30%;
 	width: 30%;
@@ -81,7 +108,7 @@ img{
 	margin-right: 250px;
 	padding:40px;
 	font-family: serif;
-	font-size: 120%;
+	font-size: 250%;
 }
 button {
   background-color: grey;
@@ -90,7 +117,7 @@ button {
   padding: 15px 40px;
   color: #fff;
   text-decoration: none;
-  margin-left: 50%;
+  margin-left: 15%;
   font-size: 30px;
   margin-bottom: 15px;
   -ms-transform: translate(-50%);
@@ -104,40 +131,73 @@ button {
 }
 .copy{
 	background-color: #003366;
-	font-size: 110%;
+	font-size: 100%;
 	color: #fff;
 }
 .copytext{
-	margin-left: 12%;
-	padding-top: 40px;
+	margin-left: 5%;
+	padding-top: 25px;
+	font-style: oblique;
 }
-
+.photos{
+	position: relative;
+  	width: 50%;
+  	padding-bottom:5% ;
+}
+.image{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0%;
+  right: 0;
+  height: 87%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.photos:hover .overlay{
+	opacity: 80%;
+}
 </style>
 
 </head>
 
 <body >
-	<div bgcolor="black" class="hero">
-		<nav>
-			<a href="">YESWANTH REDDY</a>
-			<ul>
-				<li><a href="#hero">Home</a></li>
-				<li><a href="#aboutpage">About</a></li>
-				<li><a href="#contactpage">Contact</a></li>
-				<li><a href="">Portfolio</a></li>				
-			</ul>
+<div class="bg-img"></div>
+		<div class="headings">
+			<nav>
+			<a href="	">YESWANTH REDDY</a>
 		</nav>
+	</div>
+	<div class="bg-text">
+		
 		<center>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br>
 		<h1 style="color: whitesmoke";>Hi I'm YESWANTH REDDY RACHAMALLA</h1><br>
 		<h3 style="color: whitesmoke";>A computer science student passionate about programming and design.</h3>
 		</center>
-	</div>
+		<br><br>
+</div>
 	<div class="aboutpage">
 		<div class="about"><p>About Me </p>
 		<center><hr style="color:grey;width: 10%; align-items: center; ">
 			<br>
-		<img src="https://media.licdn.com/dms/image/D5603AQGIBe3gIgPeAQ/profile-displayphoto-shrink_400_400/0/1679103372280?e=1684368000&v=beta&t=3DIi1Q0KAFrq6PYQh0xOHPuUsts6sd8cqWNSMn14x7Y" alt="Avatar">
+		<img src="https://media.licdn.com/dms/image/D5603AQGIBe3gIgPeAQ/profile-displayphoto-shrink_400_400/0/1679103372280?e=1684368000&v=beta&t=3DIi1Q0KAFrq6PYQh0xOHPuUsts6sd8cqWNSMn14x7Y" alt="Avatar" class="pic">
 		</center>
 		</div>
 			<br>
@@ -148,28 +208,45 @@ button {
 		    	<p class="me">Moveover I like to travel. I believe travelling gives you a new perspective to everything. You get to know a lot about the different cultures, the cuisines, their history, the language and all the small unique things every place has to offer. </p>
     </div>
 
+    <center>
+    	
+    <p class="about">Certifications</p>
+    <center><hr style="color:grey;width: 10%; align-items: center; ">
+    <br><br>
+    <div bgcolor="black" class="photos" >
+    	<img src="https://github.com/RachamallaYeswanthReddy/portfolio_website/blob/77518ef8aa735a661990dc5e2c316cc7af6cdf0f/Azure%20Fundamentals.png?raw=true" class="image">
+    	<div class="overlay">
+    		<div class="text">
+    			A-Z 900 Certification shows my extreme knowledge in cloud concepts, Azure services, Azure workloads, security and privacy in Azure, as well as Azure pricing and support.
+    		</div>
+    	</div>
+    </div>
+    </center>
+
     <div class="contactpage">
     	<div class="contact">
-    		<center><h1>Contact Me</h1>
+    		<center><p>Contact Me</p>
     			<center><hr style="color:grey;width: 10%; align-items: center; "></center>
-    			<br><br>
-    		<p>Feel Free to contact me</p>
     	</div>
-    <button type="button">
-  		<a href="https://drive.google.com/file/d/1ELGJQK_MJnPHIPV5wlcOJKs_dOzDZQA0/view?usp=sharing" style="color: #000;text-decoration: none;">Resume</a>
-	</button>
+    
     <center>
 	    <div class="address">
-	    	<p><br>Chennai,India<br><br></p>
+	    	<p>Chennai,India<br><br></p>
 	    	<p>Phone: +91 79818 75023 <br><br>
-	   		Email: yeswanthrachamalla@gmail.com 
-	    </p><br><br><br><br>
+	    		Email: <a href="mailto:yeswanthrachamalla@gmail.com " style="color: black;text-decoration: none;">yeswanthrachamalla@gmail.com </a>
+	    </p><br><br>
+	    <p>Feel free to get in touch. Cheers!</p><br><br>
 	    </div>
+	    <center>
+    	<button type="button">
+  		   <a href="https://drive.google.com/file/d/1ELGJQK_MJnPHIPV5wlcOJKs_dOzDZQA0/view?usp=sharing" style="color: #000;text-decoration: none;">Resume</a>
+		</button>
+		<br><br><br>
+	</center>
 	</center>
     </div>
-
     <div class="copy">
-    	<p class="copytext">© Copyright 2014 yeswanth reddy. All Rights Reserved
+    	<p class="copytext">© Copyright 2014 <a href="https://rachamallayeswanthreddy.github.io/portfolio_website/" style="color: white;text-decoration: none;">yeswanth reddy</a>. All Rights Reserved
     	</p>
     	<br><br>
     </div>
